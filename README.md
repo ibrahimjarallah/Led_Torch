@@ -164,4 +164,4 @@ You are free to use, modify, and distribute it with attribution.
 
 **Ibrahim Jarallah**  
 GitHub: [ibrahimjarallah](https://github.com/ibrahimjarallah) \
-LinkedIn: [ibrahimjarallah] : https://www.linkedin.com/in/ibrahim-jarallah
+LinkedIn: [ibrahimjarallah](https://www.linkedin.com/in/ibrahim-jarallah)
