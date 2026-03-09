@@ -18,6 +18,12 @@
 |:---:|:---:|
 | ![2D Front](2d_view/2d_view_Front.png) | ![2D Back](2d_view/2d_view_Back.png) |
 
+## 🟤 PCB Layout — Copper Fill (2D)
+
+| Front | Back |
+|:---:|:---:|
+| ![2D Front Filled](2d_view/2d_view_Front_filled.png) | ![2D Back Filled](2d_view/2d_view_Back_filled.png) |
+
 ## 📐 Schematic
 
 ![Schematic](Schematic_view/schematic_view.png)
