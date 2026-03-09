@@ -8,7 +8,7 @@
 		(title "Led_Torch")
 		(date "2026-03-01")
 		(rev "1.0")
-		(company "IBrahim Jarallah")
+		(company "Ibrahim Jarallah")
 	)
 	(lib_symbols
 		(symbol "Device:Battery_Cell"
@@ -696,6 +696,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "Led_Torch"
 		(exclude_from_sim no)
@@ -727,6 +828,18 @@
 			(justify right top)
 		)
 		(uuid "05428321-1711-4f21-b7dd-5d39d5397fe8")
+	)
+	(junction
+		(at 132.08 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98fd89e4-8fc7-4b56-91e5-0e073fec91b8")
+	)
+	(junction
+		(at 124.46 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dcf2f326-766a-4b53-8674-838ac24ed86d")
 	)
 	(wire
 		(pts
@@ -808,18 +921,8 @@
 		)
 		(uuid "c629d5ec-b97e-4ab4-b300-1dff0d89c645")
 	)
-	(label "LED_ANODE"
-		(at 132.08 78.74 90)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left bottom)
-		)
-		(uuid "85f33284-bb62-4b90-92da-56210c56f97d")
-	)
-	(label "BAT_POS"
-		(at 137.16 92.71 0)
+	(label "BAT-"
+		(at 133.35 92.71 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -828,13 +931,13 @@
 		)
 		(uuid "cee1f9f4-28f8-4bd2-bbfb-f317a705177f")
 	)
-	(label "LED_CATHODE"
-		(at 120.65 78.74 90)
+	(label "BAT+"
+		(at 123.19 92.71 180)
 		(effects
 			(font
 				(size 0.762 0.762)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "ee870945-ddcd-4f27-86e9-7cc071cef01b")
 	)
@@ -900,6 +1003,136 @@
 			(project ""
 				(path "/8fde1427-f0f9-4abc-b6a5-00700d695800"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 124.46 92.71 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d8668ac-c1ca-4a33-8c55-65eaa708a15c")
+		(property "Reference" "#FLG01"
+			(at 124.46 94.615 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR"
+			(at 124.46 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 124.46 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7b9dd96-02b2-47c5-9d06-8d43959b765c")
+		)
+		(instances
+			(project ""
+				(path "/8fde1427-f0f9-4abc-b6a5-00700d695800"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 132.08 92.71 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a3b4362c-9cb5-4263-af59-ddb3ad679f06")
+		(property "Reference" "#FLG02"
+			(at 132.08 94.615 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 132.08 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a4f0089-ab8a-4992-b8c5-3ac46fe8866b")
+		)
+		(instances
+			(project "Led_Torch"
+				(path "/8fde1427-f0f9-4abc-b6a5-00700d695800"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
